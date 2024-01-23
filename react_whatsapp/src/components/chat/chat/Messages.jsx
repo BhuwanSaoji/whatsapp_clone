@@ -93,7 +93,7 @@ const Messages = ({ conversation }) => {
 
     fetchMessages()
 
-  }, [person.sub, conversation["_id"], newMessageFlag])
+  }, [person.sub, conversation?._id, newMessageFlag])
 
   return (
     <Wrapper>
